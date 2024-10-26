@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="nums">Select your number of foods</label>
+      <input type="number" id="nums" />
+    </div>
+    <div>
+      <label for="foods">Select your foods</label>
+      <select id="selectFood">
+        <option value="pizza">Pizza</option>
+        <option value="kebab">Kebab</option>
+        <option value="soup">Soup</option>
+        <option value="pasta">Pasta</option>
+        <option value="salad">Salad</option>
+        <option value="sandwich">Sandwich</option>
+        <option value="burger">Burger</option>
+        <option value="rice">Rice</option>
+      </select>
+      <button id="submiteButton" onclick="showFoods()">submite</button>
+    </div>
+
+    <div>
+      <img
+        id="foodImage"
+        src=""
+        alt="Food Image"
+        style="max-width: 200px; display: none"
+      />
+      <span id="name">Name</span>
+      <span id="number">Numbers</span>
+      <span id="showDate">Date</span>
+      <span id="foodId">ID</span>
+      <button id="deleteButton" onclick="deleteBtn()">Delete</button>
+    </div>
+
+    <script src="foods.js"></script>
+  </body>
+</html>
